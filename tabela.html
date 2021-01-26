@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo HTML5 | Tabelas</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;            
+            border-collapse: collapse;
+        }
+        td, td{
+            padding: 5px;
+        }
+        th{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aprendendo TABELAS</h1>
+
+    <table  width=30%> <!--Declara que foi aberta uma tabela-->
+        <tr> <!--Declara uma linha da tabela-->
+            <th> Coluna 1</th> <!--Declara um título da coluna-->
+            <th> Coluna 2</th>
+            <th> Coluna 3</th>
+        </tr>
+        <tr>
+            <td> Dado 1</td> <!--Declara o dado da célula-->
+            <td> Dado 2</td>
+            <td> Dado 3</td>
+        </tr>
+        <tr>
+            <td> Dado 1.2</td>
+            <td> Dado 2.2</td>
+            <td> Dado 3.2</td>
+        </tr>
+    </table>
+    <br>
+    
+    <p> colspan="(número de colunas ocupadas)"</p>
+    <table width=30%>
+        <tr>
+            <th> Coluna 1</th>
+            <th colspan="2"> Coluna 2 e 3</th>
+        </tr>
+        <tr>
+            <td> Dado 1</td> 
+            <td> Dado 2</td>
+            <td> Dado 3</td>
+        </tr>
+        <tr>
+            <td> Dado 1.2</td>
+            <td> Dado 2.2</td>
+            <td> Dado 3.2</td>
+        </tr>
+    </table>
+    <br>
+    <p>rowspan="(número de linhas ocupadas)"</p>
+    <table width=30%>
+        <tr>
+            <th>Pessoas</th>
+            <th>Objetos</th>
+        </tr>
+        <tr>
+            <td>Mãe</td>
+            <td>Bolsa</td>
+        </tr>
+        <tr>
+            <td>Pai</td>
+            <td>Caixa de ferramentas</td>
+        </tr>
+        <tr>
+            <td>Leo</td>
+            <td rowspan="2">Video game</td>
+        </tr>
+        <tr>
+            <td>Du</td>
+        </tr>
+    </table>
+</body>
+</html>
